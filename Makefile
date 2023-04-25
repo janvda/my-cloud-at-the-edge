@@ -4,7 +4,7 @@ default:
 	@echo  ""
 	@echo  "Supported make targets with description:"
 	@echo  ""
-	@echo  "  build   : build this (Mkdocs) documentation"
+	@echo  "  build   : build this (Mkdocs) documentation in directory ./site/)"
 	@echo  "  serve   : run built-in dev-server that lets you preview this documentation"
 	@echo  "  open    : open this documentation on built-in dev-server in browser"
 	@echo  "  publish : deploy this documentation to GitHub Pages"
