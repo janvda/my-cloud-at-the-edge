@@ -16,12 +16,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://janvda.github.io/my-cloud-at-the-edge/topics/intel_nuc/</loc>
+         <lastmod>2023-04-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://janvda.github.io/my-cloud-at-the-edge/topics/openwrt_bridge/</loc>
          <lastmod>2023-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://janvda.github.io/my-cloud-at-the-edge/topics/openwrt_router/</loc>
+         <lastmod>2023-04-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://janvda.github.io/my-cloud-at-the-edge/topics/raspberry_pi/</loc>
          <lastmod>2023-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -13,8 +13,10 @@
         <link rel="canonical" href="https://janvda.github.io/my-cloud-at-the-edge/topics/openwrt_router/">
       
       
-        <link rel="prev" href="../openwrt_bridge/">
+        <link rel="prev" href="../../sessions/session_2/">
       
+      
+        <link rel="next" href="../openwrt_bridge/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
@@ -63,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#openwrt-router" class="md-skip">
+        <a href="#my-openwrt-router" class="md-skip">
           Skip to content
         </a>
       
@@ -75,9 +77,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="My Cloud at the Edge" class="md-header__button md-logo" aria-label="My Cloud at the Edge" data-md-component="logo">
       
@@ -162,6 +162,61 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../sessions/session_1/" class="md-tabs__link">
+        Sessions
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Topics
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -174,8 +229,10 @@
                   <div class="md-sidebar__inner">
                     
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="My Cloud at the Edge" class="md-nav__button md-logo" aria-label="My Cloud at the Edge" data-md-component="logo">
       
@@ -209,7 +266,7 @@
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        My Cloud at the edge
+        Home
       </a>
     </li>
   
@@ -251,7 +308,7 @@
   
     <li class="md-nav__item">
       <a href="../../sessions/session_1/" class="md-nav__link">
-        Session 1: Intro & Networking
+        Session 1 Intro & Networking
       </a>
     </li>
   
@@ -265,7 +322,7 @@
   
     <li class="md-nav__item">
       <a href="../../sessions/session_2/" class="md-nav__link">
-        Session 2: (under construction)
+        Session 2 (Under Construction)
       </a>
     </li>
   
@@ -313,28 +370,70 @@
               
   
   
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          OpenWrt Router
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        OpenWrt Router
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#router-model" class="md-nav__link">
+    Router Model
+  </a>
+  
+</li>
       
+        <li class="md-nav__item">
+  <a href="#flashed-with-openwrt" class="md-nav__link">
+    Flashed with OpenWrt
+  </a>
+  
+</li>
       
+        <li class="md-nav__item">
+  <a href="#location-in-my-home-network" class="md-nav__link">
+    Location in my home network
+  </a>
+  
+</li>
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+    </ul>
+  
+</nav>
       
-      
-      
-        <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
-          Openwrt bridge
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_3_1">
-          <span class="md-nav__icon md-icon"></span>
-          Openwrt bridge
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+    </li>
+  
+
+            
           
             
               
@@ -350,68 +449,29 @@
 
             
           
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
             
               
   
   
-    
   
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
-          Openwrt router
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_3_2">
-          <span class="md-nav__icon md-icon"></span>
-          Openwrt router
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        OpenWrt Router
+    <li class="md-nav__item">
+      <a href="../raspberry_pi/" class="md-nav__link">
+        Raspberry Pi
       </a>
-      
     </li>
   
 
             
           
-        </ul>
-      </nav>
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intel_nuc/" class="md-nav__link">
+        Intel NUC
+      </a>
     </li>
   
 
@@ -443,6 +503,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#router-model" class="md-nav__link">
+    Router Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flashed-with-openwrt" class="md-nav__link">
+    Flashed with OpenWrt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#location-in-my-home-network" class="md-nav__link">
+    Location in my home network
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -459,8 +548,19 @@
   
 
 
-<h1 id="openwrt-router">OpenWrt Router</h1>
-<p>TODO</p>
+<h1 id="my-openwrt-router">My OpenWrt Router</h1>
+<h2 id="router-model">Router Model</h2>
+<p><strong>Model</strong> : TP-Link Archer C7 Dual Band Gigabit WiFi-router (1300 Mbps (5 GHz) + 450 Mbps (2,4 GHz), 5 Gigabit LAN-poort, 1 USB 2.0-poort) Zwart</p>
+<p><strong>Price</strong>: 56 €</p>
+<p><img alt="TP-Link Archer C7.jpg" src="TP-Link_Archer_C7.jpg" /></p>
+<h2 id="flashed-with-openwrt">Flashed with OpenWrt</h2>
+<p><strong>Firmware version</strong> : <code>OpenWrt 21.02.0 r16279-5cc0535800 / LuCI openwrt-21.02 branch git-21.231.26241-422c175</code></p>
+<p>The <a href="https://openwrt.org/">OpenWrt Project</a> is a Linux operating system targeting embedded devices (typically wireless routers).</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip: Assure you buy a router that is in the list of <a href="https://openwrt.org/supported_devices">OpenWrt supported devices</a>.</p>
+</div>
+<h2 id="location-in-my-home-network">Location in my home network</h2>
+<p><img alt="My Home Network" src="network.drawio.png" /></p>
 
 
 
@@ -498,7 +598,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
