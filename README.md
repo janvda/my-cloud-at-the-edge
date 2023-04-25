@@ -9,4 +9,7 @@ brew install python
 
 # install mkdocs (version 1.4.2)
 pip3 install mkdocs
+
+# install mkdocs material theme
+pip3 install mkdocs-material 
 ```

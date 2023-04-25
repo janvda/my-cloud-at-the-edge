@@ -1,3 +1,0 @@
-# OpenWrt
-
-TODO

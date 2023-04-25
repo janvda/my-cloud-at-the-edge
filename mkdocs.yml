@@ -1,2 +1,9 @@
 site_name: My Cloud at the Edge
 site_url: https://janvda.github.io/my-cloud-at-the-edge/
+site_author: Jan Van den Audenaerde
+repo_name: janvda/my-cloud-at-the-edge
+repo_url: https://github.com/janvda/my-cloud-at-the-edge
+theme:
+  name: material
+plugins:
+  - search

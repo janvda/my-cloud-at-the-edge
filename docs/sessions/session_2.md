@@ -1,3 +1,5 @@
-# Session 2: Agenda (TODO)
+# Session 2: (under construction)
+
+## Agenda (Proposal)
 
 TODO
