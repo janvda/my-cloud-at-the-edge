@@ -9,6 +9,5 @@
     1. [OpenWrt Router](../topics/openwrt_router/README.md)
     2. [OpenWrt Bridge](../topics/openwrt_bridge/README.md)
 5. Devices
-    1. [Raspberry Pi]
-    2. [Intel Nuc]
-
+    1. [Raspberry Pi](../topics/raspberry_pi/README.md)
+    2. [Intel Nuc](../topics/intel_nuc/README.md)

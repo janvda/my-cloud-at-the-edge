@@ -4,7 +4,7 @@
 
 A description of the setup of *my cloud at the edge* = 
 
- * a set of raspberry pi devices and intel nuc devices 
+ * a set of [raspberry pi devices](./topics/raspberry_pi/README.md) and [intel NUC](./topics/intel_nuc/README.md) devices 
  * in my home LAN
  * running docker
  * which are managed from my MacBook.
