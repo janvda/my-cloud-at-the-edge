@@ -1,4 +1,9 @@
 
+## Published location
+
+This documentation is (regularly) published to site:
+
+* https://janvda.github.io/my-cloud-at-the-edge/
 
 ## Installing mkdocs on my macbook
 
