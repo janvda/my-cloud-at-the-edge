@@ -426,6 +426,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    Why ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ipv6-out-of-scope" class="md-nav__link">
+    IPv6 - out of scope
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-routing-network" class="md-nav__link">
+    Configure routing / network
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -530,6 +564,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    Why ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ipv6-out-of-scope" class="md-nav__link">
+    IPv6 - out of scope
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-routing-network" class="md-nav__link">
+    Configure routing / network
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -550,8 +618,10 @@
 
 <h1 id="my-openwrt-router">My OpenWrt Router</h1>
 <h2 id="router-model">Router Model</h2>
-<p><strong>Model</strong> : TP-Link Archer C7 Dual Band Gigabit WiFi-router (1300 Mbps (5 GHz) + 450 Mbps (2,4 GHz), 5 Gigabit LAN-poort, 1 USB 2.0-poort) Zwart</p>
-<p><strong>Price</strong>: 56 €</p>
+<p><strong>Model</strong> : TP-Link Archer C7 Dual Band Gigabit WiFi-router (1300 Mbps (5 GHz) + 450 Mbps (2,4 GHz), 5 Gigabit LAN-port, 1 USB 2.0-port) Black</p>
+<p><strong>Price</strong>: 56 € (nov 2021)</p>
+<p><strong>Memory</strong>: 120 MB</p>
+<p><strong>Architecture</strong>: Qualcomm Atheros QCA956X ver 1 rev 0</p>
 <p><img alt="TP-Link Archer C7.jpg" src="TP-Link_Archer_C7.jpg" /></p>
 <h2 id="flashed-with-openwrt">Flashed with OpenWrt</h2>
 <p><strong>Firmware version</strong> : <code>OpenWrt 21.02.0 r16279-5cc0535800 / LuCI openwrt-21.02 branch git-21.231.26241-422c175</code></p>
@@ -561,6 +631,41 @@
 </div>
 <h2 id="location-in-my-home-network">Location in my home network</h2>
 <p><img alt="My Home Network" src="network.drawio.png" /></p>
+<h2 id="why">Why ?</h2>
+<ol>
+<li>Flashing a router with OpenWrt was on my nerd bucketlist</li>
+<li>Learn about routers, networking and OpenWrt</li>
+<li>Have full control to configure your home network<ul>
+<li>This is especially relevant if your ISP modem doesn't allow to configure all things</li>
+</ul>
+</li>
+<li>Maybe to get better WiFi  (as your are using the WiFi of the OpenWrt Router iso of the ISP modem)</li>
+</ol>
+<h2 id="configuration">Configuration</h2>
+<p>I don't remember everything.</p>
+<div class="admonition example">
+<p class="admonition-title"><a href="http://archer7.lan">DEMO router configuration</a></p>
+</div>
+<h3 id="ipv6-out-of-scope">IPv6 - out of scope</h3>
+<p>I ignored IPv6 configuration.
+IPv4 is sufficient for me.</p>
+<h3 id="configure-routing-network">Configure routing / network</h3>
+<p>The main configuration steps (as I remember it)</p>
+<ol>
+<li>Configure Network&gt;Interfaces</li>
+</ol>
+<p><img alt="network interfaces" src="archer7_network_interfaces.png" /></p>
+<ol>
+<li><em>Firewall configuration</em></li>
+</ol>
+<p>Below settings opens firewall in both directions + enables masquerading in both directions.</p>
+<ul>
+<li>allows to ping from OpenWrt Router LAN to ISP modem LAN</li>
+<li>allows to access the internet from OpenWrt Router LAN</li>
+<li>doesn't allow to ping Archer LAN from ISP modem LAN</li>
+<li>allows to access OpenWrt Router via its ISP modem LAN IP address (http://192.168.1.56)</li>
+</ul>
+<p><img alt="network firewall" src="archer7_network_firewall.png" /></p>
 
 
 
