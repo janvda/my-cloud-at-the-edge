@@ -34,9 +34,11 @@ The [OpenWrt Project](https://openwrt.org/) is a Linux operating system targetin
 
 ## Configuration
 
-I don't remember everything.
+I don't remember everything I did 2 years ago, but a lot of information can be found at:
+* https://openwrt.org/
+* https://forum.openwrt.org/
 
-!!! example "[DEMO router configuration](http://archer7.lan)"
+!!! example "[DEMO OpenWrt router administrator site](http://archer7.lan)"
 
 ### IPv6 - out of scope
 
@@ -45,7 +47,7 @@ IPv4 is sufficient for me.
 
 ### Configure routing / network
 
-The main configuration steps (as I remember it)
+The main configuration steps (as I remember it) to setup my `192.168.2.0/24` network
 
 1. Configure Network>Interfaces
 
