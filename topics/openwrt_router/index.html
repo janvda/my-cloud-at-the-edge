@@ -442,8 +442,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ipv6-out-of-scope" class="md-nav__link">
-    IPv6 - out of scope
+  <a href="#ignored-ipv6" class="md-nav__link">
+    ignored IPv6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gui" class="md-nav__link">
+    GUI
   </a>
   
 </li>
@@ -451,6 +458,27 @@
           <li class="md-nav__item">
   <a href="#configure-routing-network" class="md-nav__link">
     Configure routing / network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-static-leases" class="md-nav__link">
+    Configure Static Leases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-local-domain-lan" class="md-nav__link">
+    Configure Local domain .lan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -580,8 +608,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ipv6-out-of-scope" class="md-nav__link">
-    IPv6 - out of scope
+  <a href="#ignored-ipv6" class="md-nav__link">
+    ignored IPv6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gui" class="md-nav__link">
+    GUI
   </a>
   
 </li>
@@ -589,6 +624,27 @@
           <li class="md-nav__item">
   <a href="#configure-routing-network" class="md-nav__link">
     Configure routing / network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-static-leases" class="md-nav__link">
+    Configure Static Leases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-local-domain-lan" class="md-nav__link">
+    Configure Local domain .lan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -639,18 +695,29 @@
 <li>This is especially relevant if your ISP modem doesn't allow to configure all things</li>
 </ul>
 </li>
+<li>Makes it easier to switch to new ISP or new ISP modem (e.g. switch from ADSL to fiber)</li>
 <li>Maybe to get better WiFi  (as your are using the WiFi of the OpenWrt Router iso of the ISP modem)</li>
 </ol>
 <h2 id="configuration">Configuration</h2>
-<p>I don't remember everything I did 2 years ago, but a lot of information can be found at:
-* https://openwrt.org/
-* https://forum.openwrt.org/</p>
-<div class="admonition example">
-<p class="admonition-title"><a href="http://archer7.lan">DEMO OpenWrt router administrator site</a></p>
-</div>
-<h3 id="ipv6-out-of-scope">IPv6 - out of scope</h3>
+<p>I don't remember everything I did 2 years ago, but a lot of information can be found at:</p>
+<ul>
+<li><a href="https://openwrt.org/">openwrt.org</a></li>
+<li><a href="https://forum.openwrt.org/">openwrt forum</a></li>
+</ul>
+<details class="warning">
+<summary>Think twice before activating any changes that might make your router inaccessible</summary>
+<p>It is of course possible to make changes so that you can't access your OpenWrt router anymore from any device.  In that case it is also not possible to correct the issue without doing a <code>reset</code> and
+ start all over.  (It happened me once)</p>
+</details>
+<h3 id="ignored-ipv6">ignored IPv6</h3>
 <p>I ignored IPv6 configuration.
 IPv4 is sufficient for me.</p>
+<h3 id="gui">GUI</h3>
+<p>OpenWrt comes with a very nice GUI.
+Almost everything can be configured by this GUI.</p>
+<div class="admonition example">
+<p class="admonition-title"><a href="http://archer7.lan">DEMO OpenWrt GUI (LuCi)</a></p>
+</div>
 <h3 id="configure-routing-network">Configure routing / network</h3>
 <p>The main configuration steps (as I remember it) to setup my <code>192.168.2.0/24</code> network</p>
 <ol>
@@ -664,10 +731,46 @@ IPv4 is sufficient for me.</p>
 <ul>
 <li>allows to ping from OpenWrt Router LAN to ISP modem LAN</li>
 <li>allows to access the internet from OpenWrt Router LAN</li>
-<li>doesn't allow to ping Archer LAN from ISP modem LAN</li>
+<li>doesn't allow to ping OpenWrt Router LAN from ISP modem LAN</li>
 <li>allows to access OpenWrt Router via its ISP modem LAN IP address (http://192.168.1.56)</li>
 </ul>
 <p><img alt="network firewall" src="archer7_network_firewall.png" /></p>
+<ol>
+<li>Configure IPv4-Routes</li>
+</ol>
+<p>The routes can be configured via menu <code>Status &gt; Routes</code>.  The relevant IPv4 routes are put in a red box.</p>
+<p>I think that I didn't configure those routes, by default they were properly setup.</p>
+<p><img alt="network IPv4-Routes" src="archer7_network_ipv4_routes.png" /></p>
+<h3 id="configure-static-leases">Configure Static Leases</h3>
+<p>Instead of working with <code>/etc/hosts</code> files and configuring static IP addresses for each device, you can also define static leases (DHCP).  So the DHCP server of the router will automatically assign a static IP address and hostname based on the MAC address.</p>
+<p><img alt="network DHCP Static Leases" src="archer7_network_static_leases.png" /></p>
+<details class="example">
+<summary><a href="http://archer7.lan">DEMO OpenWrt Static Leases configuration</a></summary>
+<p>Demo the assignment of a static lease</p>
+</details>
+<details class="note">
+<summary>Some devices (e.g. iphones) change MAC address each time they connect.</summary>
+<p>So this approach of static leases only works if the MAC address doesn't change.
+For iphone it is possible to configure that it has to use a fixed MAC address for a specific wifi network (disable setting <code>Private Wi-Fi Address</code>)</p>
+</details>
+<h3 id="configure-local-domain-lan">Configure Local domain <code>.lan</code></h3>
+<p>The below settings will set the local domain to <code>.lan</code>.  So the full name of the hosts defined by the static leases is <code>&lt;hostname&gt;.lan</code> (e.g. <code>nuc1.lan</code>)</p>
+<p><img alt="network DHCP DNS .lan setup" src="archer7_network_dhcp_dns.png" /></p>
+<p>Here below a log of <code>hostname</code> and <code>ping nuc1</code> command entered in a terminal window on my mac-book connected to my home network.  The hostname, domain and ip address are all configured in my OpenWrt router (see above).</p>
+<div class="highlight"><pre><span></span><code>mac-jan:tmp jan$ hostname
+mac-jan.lan
+mac-jan:tmp jan$ ping nuc1
+PING nuc1.lan (192.168.2.11): 56 data bytes
+64 bytes from 192.168.2.11: icmp_seq=0 ttl=64 time=35.316 ms
+64 bytes from 192.168.2.11: icmp_seq=1 ttl=64 time=3.348 ms
+</code></pre></div>
+<h3 id="conclusion">Conclusion</h3>
+<ul>
+<li>I have created my own <code>192.168.2.0/24</code> home network (domain <code>.lan</code>)</li>
+<li>All (relevant) devices automatically get a static IPv4 address and a hostname via DHCP</li>
+<li>each device in my home network can reach any of the other devices in my home network by just using its hostname (or hostname<code>.lan</code>)</li>
+<li>All of this is configured on my OpenWRT router (so no specific configuration (E.g. <code>/etc/hosts</code>) is needed on any of the devices in my home network.)</li>
+</ul>
 
 
 
