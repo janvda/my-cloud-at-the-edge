@@ -23,6 +23,6 @@ nav:
     - Session 2 (Under Construction): sessions/session_2.md
   - Topics:
     - OpenWrt Router: topics/openwrt_router/README.md
-    - OpenWrt Bridge: topics/openwrt_bridge/README.md
+    - OpenWrt Access Point: topics/openwrt_access_point/README.md
     - Raspberry Pi:   topics/raspberry_pi/README.md
     - Intel NUC:      topics/intel_nuc/README.md
