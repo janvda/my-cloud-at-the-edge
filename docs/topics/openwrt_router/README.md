@@ -40,10 +40,12 @@ I don't remember everything I did 2 years ago, but a lot of information can be f
 * [openwrt.org](https://openwrt.org/)
 * [openwrt forum](https://forum.openwrt.org/)
 
-??? Warning "Think twice before activating any changes that might make your router inaccessible"
+??? Danger "Think twice before activating any changes that might make your router inaccessible !"
 
      It is of course possible to make changes so that you can't access your OpenWrt router anymore from any device.  In that case it is also not possible to correct the issue without doing a `reset` and
      start all over.  (It happened me once)
+
+!!! Tip "The configurations described below can also be performed on most routers/ISP modems !"
 
 ### ignored IPv6
 
@@ -61,11 +63,11 @@ Almost everything can be configured by this GUI.
 
 The main configuration steps (as I remember it) to setup my `192.168.2.0/24` network
 
-1. Configure Network>Interfaces
+#### Configure Network>Interfaces
 
 ![network interfaces](./archer7_network_interfaces.png)
 
-2. *Firewall configuration*
+#### Firewall configuration
 
 Below settings opens firewall in both directions + enables masquerading in both directions.
 
@@ -76,7 +78,7 @@ Below settings opens firewall in both directions + enables masquerading in both 
 
 ![network firewall](./archer7_network_firewall.png)
 
-3. Configure IPv4-Routes
+#### Configure IPv4-Routes
 
 The routes can be configured via menu `Status > Routes`.  The relevant IPv4 routes are put in a red box.
 
@@ -118,8 +120,12 @@ PING nuc1.lan (192.168.2.11): 56 data bytes
 
 ### Conclusion
 
+The outcome of this configuration:
+
 * I have created my own `192.168.2.0/24` home network (domain `.lan`)
 * All (relevant) devices automatically get a static IPv4 address and a hostname via DHCP
 * each device in my home network can reach any of the other devices in my home network by just using its hostname (or hostname`.lan`)
-* All of this is configured on my OpenWRT router (so no specific configuration (E.g. `/etc/hosts`) is needed on any of the devices in my home network.)
+* All of this is configured on my OpenWRT router
+    * so no specific configuration (E.g. `/etc/hosts`) is needed on any of the devices in my home network.
 
+!!! Note "OpenWrt has a ton of features and [additional software packages](https://openwrt.org/packages/start) that I didn't use."
