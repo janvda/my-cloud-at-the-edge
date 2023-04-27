@@ -10,7 +10,7 @@
         <meta name="author" content="Jan Van den Audenaerde">
       
       
-        <link rel="canonical" href="https://janvda.github.io/my-cloud-at-the-edge/topics/openwrt_bridge/">
+        <link rel="canonical" href="https://janvda.github.io/my-cloud-at-the-edge/topics/openwrt_access_point/">
       
       
         <link rel="prev" href="../openwrt_router/">
@@ -23,7 +23,7 @@
     
     
       
-        <title>OpenWrt Bridge - My Cloud at the Edge</title>
+        <title>OpenWrt Access Point - My Cloud at the Edge</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#openwrt-bridge" class="md-skip">
+        <a href="#my-openwrt-access-point" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              OpenWrt Bridge
+              OpenWrt Access Point
             
           </span>
         </div>
@@ -395,9 +395,68 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          OpenWrt Access Point
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        OpenWrt Bridge
+        OpenWrt Access Point
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#router-model" class="md-nav__link">
+    Router Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flashed-with-openwrt" class="md-nav__link">
+    Flashed with OpenWrt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#location-in-my-home-network" class="md-nav__link">
+    Location in my home network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    Why ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -458,6 +517,49 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#router-model" class="md-nav__link">
+    Router Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flashed-with-openwrt" class="md-nav__link">
+    Flashed with OpenWrt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#location-in-my-home-network" class="md-nav__link">
+    Location in my home network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    Why ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -474,8 +576,23 @@
   
 
 
-<h1 id="openwrt-bridge">OpenWrt Bridge</h1>
-<p>TODO</p>
+<h1 id="my-openwrt-access-point">My OpenWrt Access Point</h1>
+<h2 id="router-model">Router Model</h2>
+<p><strong>Model</strong> : TP-Link Archer C6 dual-band Gigabit WLAN router (867Mbit / s 5GHz + 300Mbit / s 2.4GHz, 4 Gigabit LAN port, Mu-MIMO, IPTV, VPN, 4 external antennas) black</p>
+<p><strong>Price</strong>: 42 € (march 2020)</p>
+<p><strong>Memory</strong>: 120 MB</p>
+<p><strong>Architecture</strong>: Qualcomm Atheros QCA956X ver 1 rev 0</p>
+<p><img alt="TP-Link Archer C6.jpg" src="TP-Link-Archer_C6.png" /></p>
+<h2 id="flashed-with-openwrt">Flashed with OpenWrt</h2>
+<p><strong>Firmware version</strong> : <code>OpenWrt 21.02.0 r16279-5cc0535800 / LuCI openwrt-21.02 branch git-21.231.26241-422c175</code></p>
+<h2 id="location-in-my-home-network">Location in my home network</h2>
+<p><img alt="My Home Network" src="network.drawio.png" /></p>
+<h2 id="why">Why ?</h2>
+<ol>
+<li><a href="../openwrt_router/">My OpenWRT router</a> doesn't provide WiFi coverage up to 1st floor and 2nd floor.</li>
+<li>Time scheduled controlled WiFi Access of my kids</li>
+</ol>
+<h2 id="configuration">Configuration</h2>
 
 
 

@@ -16,7 +16,7 @@
         <link rel="prev" href="../../sessions/session_2/">
       
       
-        <link rel="next" href="../openwrt_bridge/">
+        <link rel="next" href="../openwrt_access_point/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
@@ -460,6 +460,33 @@
     Configure routing / network
   </a>
   
+    <nav class="md-nav" aria-label="Configure routing / network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-networkinterfaces" class="md-nav__link">
+    Configure Network&gt;Interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firewall-configuration" class="md-nav__link">
+    Firewall configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-ipv4-routes" class="md-nav__link">
+    Configure IPv4-Routes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -503,8 +530,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../openwrt_bridge/" class="md-nav__link">
-        OpenWrt Bridge
+      <a href="../openwrt_access_point/" class="md-nav__link">
+        OpenWrt Access Point
       </a>
     </li>
   
@@ -626,6 +653,33 @@
     Configure routing / network
   </a>
   
+    <nav class="md-nav" aria-label="Configure routing / network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-networkinterfaces" class="md-nav__link">
+    Configure Network&gt;Interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firewall-configuration" class="md-nav__link">
+    Firewall configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-ipv4-routes" class="md-nav__link">
+    Configure IPv4-Routes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -704,11 +758,14 @@
 <li><a href="https://openwrt.org/">openwrt.org</a></li>
 <li><a href="https://forum.openwrt.org/">openwrt forum</a></li>
 </ul>
-<details class="warning">
-<summary>Think twice before activating any changes that might make your router inaccessible</summary>
+<details class="danger">
+<summary>Think twice before activating any changes that might make your router inaccessible !</summary>
 <p>It is of course possible to make changes so that you can't access your OpenWrt router anymore from any device.  In that case it is also not possible to correct the issue without doing a <code>reset</code> and
  start all over.  (It happened me once)</p>
 </details>
+<div class="admonition tip">
+<p class="admonition-title">The configurations described below can also be performed on most routers/ISP modems !</p>
+</div>
 <h3 id="ignored-ipv6">ignored IPv6</h3>
 <p>I ignored IPv6 configuration.
 IPv4 is sufficient for me.</p>
@@ -720,13 +777,9 @@ Almost everything can be configured by this GUI.</p>
 </div>
 <h3 id="configure-routing-network">Configure routing / network</h3>
 <p>The main configuration steps (as I remember it) to setup my <code>192.168.2.0/24</code> network</p>
-<ol>
-<li>Configure Network&gt;Interfaces</li>
-</ol>
+<h4 id="configure-networkinterfaces">Configure Network&gt;Interfaces</h4>
 <p><img alt="network interfaces" src="archer7_network_interfaces.png" /></p>
-<ol>
-<li><em>Firewall configuration</em></li>
-</ol>
+<h4 id="firewall-configuration">Firewall configuration</h4>
 <p>Below settings opens firewall in both directions + enables masquerading in both directions.</p>
 <ul>
 <li>allows to ping from OpenWrt Router LAN to ISP modem LAN</li>
@@ -735,9 +788,7 @@ Almost everything can be configured by this GUI.</p>
 <li>allows to access OpenWrt Router via its ISP modem LAN IP address (http://192.168.1.56)</li>
 </ul>
 <p><img alt="network firewall" src="archer7_network_firewall.png" /></p>
-<ol>
-<li>Configure IPv4-Routes</li>
-</ol>
+<h4 id="configure-ipv4-routes">Configure IPv4-Routes</h4>
 <p>The routes can be configured via menu <code>Status &gt; Routes</code>.  The relevant IPv4 routes are put in a red box.</p>
 <p>I think that I didn't configure those routes, by default they were properly setup.</p>
 <p><img alt="network IPv4-Routes" src="archer7_network_ipv4_routes.png" /></p>
@@ -765,12 +816,19 @@ PING nuc1.lan (192.168.2.11): 56 data bytes
 64 bytes from 192.168.2.11: icmp_seq=1 ttl=64 time=3.348 ms
 </code></pre></div>
 <h3 id="conclusion">Conclusion</h3>
+<p>The outcome of this configuration:</p>
 <ul>
 <li>I have created my own <code>192.168.2.0/24</code> home network (domain <code>.lan</code>)</li>
 <li>All (relevant) devices automatically get a static IPv4 address and a hostname via DHCP</li>
 <li>each device in my home network can reach any of the other devices in my home network by just using its hostname (or hostname<code>.lan</code>)</li>
-<li>All of this is configured on my OpenWRT router (so no specific configuration (E.g. <code>/etc/hosts</code>) is needed on any of the devices in my home network.)</li>
+<li>All of this is configured on my OpenWRT router<ul>
+<li>so no specific configuration (E.g. <code>/etc/hosts</code>) is needed on any of the devices in my home network.</li>
 </ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">OpenWrt has a ton of features and <a href="https://openwrt.org/packages/start">additional software packages</a> that I didn't use.</p>
+</div>
 
 
 
