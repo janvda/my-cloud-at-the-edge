@@ -47,10 +47,10 @@ I don't remember everything I did 2 years ago, but a lot of information can be f
 
 !!! Tip "The configurations described below can also be performed on most routers/ISP modems !"
 
-### ignored IPv6
+### Ignored IPv6
 
 I ignored IPv6 configuration.
-IPv4 is sufficient for me.
+IPv4 is sufficient for me and I also don't know much about IPv6.
 
 ### GUI
 
@@ -86,6 +86,12 @@ I think that I didn't configure those routes, by default they were properly setu
 
 ![network IPv4-Routes](./archer7_network_ipv4_routes.png)
 
+### Configure WiFi
+
+??? example "[Show my OpenWrt WiFi Configuration](http://archer7.lan)"
+
+    Show my actual WiFi configuration (menu  Network > Wireless)
+
 ### Configure Static Leases
 
 Instead of working with `/etc/hosts` files and configuring static IP addresses for each device, you can also define static leases (DHCP).  So the DHCP server of the router will automatically assign a static IP address and hostname based on the MAC address.
@@ -117,6 +123,10 @@ PING nuc1.lan (192.168.2.11): 56 data bytes
 64 bytes from 192.168.2.11: icmp_seq=0 ttl=64 time=35.316 ms
 64 bytes from 192.168.2.11: icmp_seq=1 ttl=64 time=3.348 ms
 ```
+
+### Issues
+
+* [#1 Once or twice a day cannot resolve hostname `nuc2.lan` in docker container](https://github.com/janvda/my-cloud-at-the-edge/issues/1) - it is not yet clear if this is caused by this setup or not.
 
 ### Conclusion
 
