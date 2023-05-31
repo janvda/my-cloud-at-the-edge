@@ -52,12 +52,20 @@ I don't remember everything I did 2 years ago, but a lot of information can be f
 I ignored IPv6 configuration.
 IPv4 is sufficient for me and I also don't know much about IPv6.
 
-### GUI
+### GUI (web interface)
 
 OpenWrt comes with a very nice GUI.
 Almost everything can be configured by this GUI.
 
 !!! example "[DEMO OpenWrt GUI (LuCi)](http://archer7.lan)"
+
+### Command-line (ssh)
+
+Besides the GUI it has also a command line interface ([UCI](https://openwrt.org/docs/guide-user/base-system/uci)) which can be accessed via SSH.
+
+??? example "DEMO Access the router via ssh"
+
+    An example of an uci command : `uci show wireless`
 
 ### Configure routing / network
 
@@ -105,7 +113,14 @@ Instead of working with `/etc/hosts` files and configuring static IP addresses f
 ??? note "Some devices (e.g. iphones) change MAC address each time they connect."
 
     So this approach of static leases only works if the MAC address doesn't change.
-    For iphone it is possible to configure that it has to use a fixed MAC address for a specific wifi network (disable setting `Private Wi-Fi Address`)
+    Iphones when connecting to wifi network are each time using a different MAC address.  This makes that DHCP can not use the MAC address to assign a specific IP address.
+    To overcome this issue you must disable this feature for your home wifi.
+    This can be disabled on your iphone through following steps:
+
+    1. Goto Settings > Wi-Fi
+    2. click on (i) - information of `<your home wifi network>`
+    3. disable the check box `Private Wi-Fi Address`
+    4. ... and do the same steps for `<your home 5G wifi network>` if it exists
 
 ### Configure Local domain `.lan`
 
