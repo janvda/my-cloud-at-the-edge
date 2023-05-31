@@ -16,7 +16,7 @@
         <link rel="prev" href="../openwrt_router/">
       
       
-        <link rel="next" href="../raspberry_pi/">
+        <link rel="next" href="../openwrt_time_scheduled_access/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
@@ -448,8 +448,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
+  <a href="#configuration-as-wifi-access-point" class="md-nav__link">
+    Configuration as WiFi access point
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-to-control-wifi-access-of-my-kids" class="md-nav__link">
+    Configuration to control WiFi access of my kids
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -458,6 +472,48 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openwrt_time_scheduled_access/" class="md-nav__link">
+        OpenWrt Time Scheduled Access
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../google_sites/" class="md-nav__link">
+        Google Sites
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pi_access_point/README.md" class="md-nav__link">
+        Pi Access Point
+      </a>
     </li>
   
 
@@ -552,8 +608,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
+  <a href="#configuration-as-wifi-access-point" class="md-nav__link">
+    Configuration as WiFi access point
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-to-control-wifi-access-of-my-kids" class="md-nav__link">
+    Configuration to control WiFi access of my kids
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -577,6 +647,7 @@
 
 
 <h1 id="my-openwrt-access-point">My OpenWrt Access Point</h1>
+<p>Before reading this topic, first read topic: <a href="../openwrt_router/">My OpenWRT router</a></p>
 <h2 id="router-model">Router Model</h2>
 <p><strong>Model</strong> : TP-Link Archer C6 dual-band Gigabit WLAN router (867Mbit / s 5GHz + 300Mbit / s 2.4GHz, 4 Gigabit LAN port, Mu-MIMO, IPTV, VPN, 4 external antennas) black</p>
 <p><strong>Price</strong>: 42 € (march 2020)</p>
@@ -589,10 +660,23 @@
 <p><img alt="My Home Network" src="network.drawio.png" /></p>
 <h2 id="why">Why ?</h2>
 <ol>
-<li><a href="../openwrt_router/">My OpenWRT router</a> doesn't provide WiFi coverage up to 1st floor and 2nd floor.</li>
-<li>Time scheduled controlled WiFi Access of my kids</li>
+<li>To extend WiFi to 1st and 2nd floor.<ul>
+<li>Note that my <a href="../openwrt_router/">My OpenWRT router</a> doesn't provide WiFi coverage up to 1st floor and 2nd floor.</li>
+</ul>
+</li>
+<li><a href="../openwrt_time_scheduled_access/">Control WiFi Access (based on time schedule) of my kids</a></li>
 </ol>
-<h2 id="configuration">Configuration</h2>
+<h2 id="configuration-as-wifi-access-point">Configuration as WiFi access point</h2>
+<p>To keep my network setup simple, I didn't want to create a separate network or subnet.  So for this I configured this router as a <a href="https://en.wikipedia.org/wiki/Network_bridge">network bridge</a> as specified below:</p>
+<ol>
+<li>Create a network bridge: Connect powerline adaptor to one of the 4 LAN ports.  Don't use the WAN port: <img alt="archer6 bridge mode" src="archer6_bridge.drawio.png" /></li>
+<li>Setup static IP address for LAN interface (you could also use DHCP) <img alt="TP" src="TP-Link-Archer-C6_interfaces.png" /></li>
+<li>Setup WIFI using same SSID and password as <a href="../openwrt_router/">my OpenWRT Router</a></li>
+</ol>
+<h2 id="configuration-to-control-wifi-access-of-my-kids">Configuration to control WiFi access of my kids</h2>
+<p>This is described in topic <a href="../openwrt_time_scheduled_access/">OpenWrt Time Scheduled Access</a></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This setup is used very intensive (e.g. when working at home) and is nearly always working fine.  I admit that in the last 2 years I (or my kids) have faced some temporary network issues.  Not sure if they were related to my OpenWrt routers.  All those issues got resolved from itselves or after a reboot of my router(s).</p>
 
 
 

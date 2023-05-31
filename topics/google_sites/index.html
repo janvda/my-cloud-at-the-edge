@@ -10,20 +10,20 @@
         <meta name="author" content="Jan Van den Audenaerde">
       
       
-        <link rel="canonical" href="https://janvda.github.io/my-cloud-at-the-edge/topics/openwrt_router/">
+        <link rel="canonical" href="https://janvda.github.io/my-cloud-at-the-edge/topics/google_sites/">
       
       
-        <link rel="prev" href="../../sessions/session_2/">
+        <link rel="prev" href="../openwrt_time_scheduled_access/">
       
       
-        <link rel="next" href="../openwrt_access_point/">
+        <link rel="next" href="../raspberry_pi/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
     
     
       
-        <title>OpenWrt Router - My Cloud at the Edge</title>
+        <title>Google Sites - My Cloud at the Edge</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#my-openwrt-router" class="md-skip">
+        <a href="#google-sites" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              OpenWrt Router
+              Google Sites
             
           </span>
         </div>
@@ -206,7 +206,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../openwrt_router/" class="md-tabs__link md-tabs__link--active">
         Topics
       </a>
     </li>
@@ -370,176 +370,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          OpenWrt Router
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../openwrt_router/" class="md-nav__link">
         OpenWrt Router
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#router-model" class="md-nav__link">
-    Router Model
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flashed-with-openwrt" class="md-nav__link">
-    Flashed with OpenWrt
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#location-in-my-home-network" class="md-nav__link">
-    Location in my home network
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why" class="md-nav__link">
-    Why ?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ignored-ipv6" class="md-nav__link">
-    Ignored IPv6
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gui-web-interface" class="md-nav__link">
-    GUI (web interface)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#command-line-ssh" class="md-nav__link">
-    Command-line (ssh)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-routing-network" class="md-nav__link">
-    Configure routing / network
-  </a>
-  
-    <nav class="md-nav" aria-label="Configure routing / network">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configure-networkinterfaces" class="md-nav__link">
-    Configure Network&gt;Interfaces
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#firewall-configuration" class="md-nav__link">
-    Firewall configuration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-ipv4-routes" class="md-nav__link">
-    Configure IPv4-Routes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-wifi" class="md-nav__link">
-    Configure WiFi
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-static-leases" class="md-nav__link">
-    Configure Static Leases
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-local-domain-lan" class="md-nav__link">
-    Configure Local domain .lan
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#issues" class="md-nav__link">
-    Issues
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    Conclusion
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -577,11 +412,80 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../google_sites/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Google Sites
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Google Sites
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wikipedia-definition" class="md-nav__link">
+    wikipedia definition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link" class="md-nav__link">
+    Link
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pros" class="md-nav__link">
+    Pros
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cons" class="md-nav__link">
+    Cons
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -662,132 +566,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#router-model" class="md-nav__link">
-    Router Model
+  <a href="#wikipedia-definition" class="md-nav__link">
+    wikipedia definition
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#flashed-with-openwrt" class="md-nav__link">
-    Flashed with OpenWrt
+  <a href="#link" class="md-nav__link">
+    Link
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#location-in-my-home-network" class="md-nav__link">
-    Location in my home network
+  <a href="#example" class="md-nav__link">
+    Example
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#why" class="md-nav__link">
-    Why ?
+  <a href="#pros" class="md-nav__link">
+    Pros
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ignored-ipv6" class="md-nav__link">
-    Ignored IPv6
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gui-web-interface" class="md-nav__link">
-    GUI (web interface)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#command-line-ssh" class="md-nav__link">
-    Command-line (ssh)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-routing-network" class="md-nav__link">
-    Configure routing / network
-  </a>
-  
-    <nav class="md-nav" aria-label="Configure routing / network">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configure-networkinterfaces" class="md-nav__link">
-    Configure Network&gt;Interfaces
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#firewall-configuration" class="md-nav__link">
-    Firewall configuration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-ipv4-routes" class="md-nav__link">
-    Configure IPv4-Routes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-wifi" class="md-nav__link">
-    Configure WiFi
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-static-leases" class="md-nav__link">
-    Configure Static Leases
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-local-domain-lan" class="md-nav__link">
-    Configure Local domain .lan
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#issues" class="md-nav__link">
-    Issues
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    Conclusion
+  <a href="#cons" class="md-nav__link">
+    Cons
   </a>
   
 </li>
@@ -810,132 +618,37 @@
   
 
 
-<h1 id="my-openwrt-router">My OpenWrt Router</h1>
-<h2 id="router-model">Router Model</h2>
-<p><strong>Model</strong> : TP-Link Archer C7 Dual Band Gigabit WiFi-router (1300 Mbps (5 GHz) + 450 Mbps (2,4 GHz), 5 Gigabit LAN-port, 1 USB 2.0-port) Black</p>
-<p><strong>Price</strong>: 56 € (nov 2021)</p>
-<p><strong>Memory</strong>: 120 MB</p>
-<p><strong>Architecture</strong>: Qualcomm Atheros QCA956X ver 1 rev 0</p>
-<p><img alt="TP-Link Archer C7.jpg" src="TP-Link_Archer_C7.jpg" /></p>
-<h2 id="flashed-with-openwrt">Flashed with OpenWrt</h2>
-<p><strong>Firmware version</strong> : <code>OpenWrt 21.02.0 r16279-5cc0535800 / LuCI openwrt-21.02 branch git-21.231.26241-422c175</code></p>
-<p>The <a href="https://openwrt.org/">OpenWrt Project</a> is a Linux operating system targeting embedded devices (typically wireless routers).</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip: Assure you buy a router that is in the list of <a href="https://openwrt.org/supported_devices">OpenWrt supported devices</a>.</p>
-</div>
-<h2 id="location-in-my-home-network">Location in my home network</h2>
-<p><img alt="My Home Network" src="network.drawio.png" /></p>
-<h2 id="why">Why ?</h2>
-<ol>
-<li>Flashing a router with OpenWrt was on my nerd bucketlist</li>
-<li>Learn about routers, networking and OpenWrt</li>
-<li>Have full control to configure your home network<ul>
-<li>This is especially relevant if your ISP modem doesn't allow to configure all things</li>
+<h1 id="google-sites">Google Sites</h1>
+<h2 id="wikipedia-definition">wikipedia definition</h2>
+<p><a href="https://en.wikipedia.org/wiki/Google_Sites">Google Sites</a> is a structured wiki and web page creation tool included as part of the free, web-based Google Docs Editors suite offered by Google.  Google Sites is only available as a web application. The app allows users to create and edit files online while collaborating with other users in real-time.</p>
+<h2 id="link">Link</h2>
+<ul>
+<li><a href="https://sites.google.com/new">https://sites.google.com/new</a></li>
+</ul>
+<h2 id="example">Example</h2>
+<p><img alt="Google Sites Example" src="google_sites_example.png" /></p>
+<h2 id="pros">Pros</h2>
+<ul>
+<li>It is free<ul>
+<li>you can even create multipe google sites for free</li>
 </ul>
 </li>
-<li>Makes it easier to switch to new ISP or new ISP modem (e.g. switch from ADSL to fiber)</li>
-<li>Maybe to get better WiFi  (as your are using the WiFi of the OpenWrt Router iso of the ISP modem)</li>
-</ol>
-<h2 id="configuration">Configuration</h2>
-<p>I don't remember everything I did 2 years ago, but a lot of information can be found at:</p>
-<ul>
-<li><a href="https://openwrt.org/">openwrt.org</a></li>
-<li><a href="https://forum.openwrt.org/">openwrt forum</a></li>
-</ul>
-<details class="danger">
-<summary>Think twice before activating any changes that might make your router inaccessible !</summary>
-<p>It is of course possible to make changes so that you can't access your OpenWrt router anymore from any device.  In that case it is also not possible to correct the issue without doing a <code>reset</code> and
- start all over.  (It happened me once)</p>
-</details>
-<div class="admonition tip">
-<p class="admonition-title">The configurations described below can also be performed on most routers/ISP modems !</p>
-</div>
-<h3 id="ignored-ipv6">Ignored IPv6</h3>
-<p>I ignored IPv6 configuration.
-IPv4 is sufficient for me and I also don't know much about IPv6.</p>
-<h3 id="gui-web-interface">GUI (web interface)</h3>
-<p>OpenWrt comes with a very nice GUI.
-Almost everything can be configured by this GUI.</p>
-<div class="admonition example">
-<p class="admonition-title"><a href="http://archer7.lan">DEMO OpenWrt GUI (LuCi)</a></p>
-</div>
-<h3 id="command-line-ssh">Command-line (ssh)</h3>
-<p>Besides the GUI it has also a command line interface (<a href="https://openwrt.org/docs/guide-user/base-system/uci">UCI</a>) which can be accessed via SSH.</p>
-<details class="example">
-<summary>DEMO Access the router via ssh</summary>
-<p>An example of an uci command : <code>uci show wireless</code></p>
-</details>
-<h3 id="configure-routing-network">Configure routing / network</h3>
-<p>The main configuration steps (as I remember it) to setup my <code>192.168.2.0/24</code> network</p>
-<h4 id="configure-networkinterfaces">Configure Network&gt;Interfaces</h4>
-<p><img alt="network interfaces" src="archer7_network_interfaces.png" /></p>
-<h4 id="firewall-configuration">Firewall configuration</h4>
-<p>Below settings opens firewall in both directions + enables masquerading in both directions.</p>
-<ul>
-<li>allows to ping from OpenWrt Router LAN to ISP modem LAN</li>
-<li>allows to access the internet from OpenWrt Router LAN</li>
-<li>doesn't allow to ping OpenWrt Router LAN from ISP modem LAN</li>
-<li>allows to access OpenWrt Router via its ISP modem LAN IP address (http://192.168.1.56)</li>
-</ul>
-<p><img alt="network firewall" src="archer7_network_firewall.png" /></p>
-<h4 id="configure-ipv4-routes">Configure IPv4-Routes</h4>
-<p>The routes can be configured via menu <code>Status &gt; Routes</code>.  The relevant IPv4 routes are put in a red box.</p>
-<p>I think that I didn't configure those routes, by default they were properly setup.</p>
-<p><img alt="network IPv4-Routes" src="archer7_network_ipv4_routes.png" /></p>
-<h3 id="configure-wifi">Configure WiFi</h3>
-<details class="example">
-<summary><a href="http://archer7.lan">Show my OpenWrt WiFi Configuration</a></summary>
-<p>Show my actual WiFi configuration (menu  Network &gt; Wireless)</p>
-</details>
-<h3 id="configure-static-leases">Configure Static Leases</h3>
-<p>Instead of working with <code>/etc/hosts</code> files and configuring static IP addresses for each device, you can also define static leases (DHCP).  So the DHCP server of the router will automatically assign a static IP address and hostname based on the MAC address.</p>
-<p><img alt="network DHCP Static Leases" src="archer7_network_static_leases.png" /></p>
-<details class="example">
-<summary><a href="http://archer7.lan">DEMO OpenWrt Static Leases configuration</a></summary>
-<p>Demo the assignment of a static lease</p>
-</details>
-<details class="note">
-<summary>Some devices (e.g. iphones) change MAC address each time they connect.</summary>
-<p>So this approach of static leases only works if the MAC address doesn't change.
-Iphones when connecting to wifi network are each time using a different MAC address.  This makes that DHCP can not use the MAC address to assign a specific IP address.
-To overcome this issue you must disable this feature for your home wifi.
-This can be disabled on your iphone through following steps:</p>
-<ol>
-<li>Goto Settings &gt; Wi-Fi</li>
-<li>click on (i) - information of <code>&lt;your home wifi network&gt;</code></li>
-<li>disable the check box <code>Private Wi-Fi Address</code></li>
-<li>... and do the same steps for <code>&lt;your home 5G wifi network&gt;</code> if it exists</li>
-</ol>
-</details>
-<h3 id="configure-local-domain-lan">Configure Local domain <code>.lan</code></h3>
-<p>The below settings will set the local domain to <code>.lan</code>.  So the full name of the hosts defined by the static leases is <code>&lt;hostname&gt;.lan</code> (e.g. <code>nuc1.lan</code>)</p>
-<p><img alt="network DHCP DNS .lan setup" src="archer7_network_dhcp_dns.png" /></p>
-<p>Here below a log of <code>hostname</code> and <code>ping nuc1</code> command entered in a terminal window on my mac-book connected to my home network.  The hostname, domain and ip address are all configured in my OpenWrt router (see above).</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mac-jan:tmp jan$ hostname
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>mac-jan.lan
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>mac-jan:tmp jan$ ping nuc1
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>PING nuc1.lan (192.168.2.11): 56 data bytes
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>64 bytes from 192.168.2.11: icmp_seq=0 ttl=64 time=35.316 ms
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>64 bytes from 192.168.2.11: icmp_seq=1 ttl=64 time=3.348 ms
-</span></code></pre></div>
-<h2 id="issues">Issues</h2>
-<ul>
-<li><a href="https://github.com/janvda/my-cloud-at-the-edge/issues/1">#1 Once or twice a day cannot resolve hostname <code>nuc2.lan</code> in docker container</a> - it is not yet clear if this is caused by this setup or not.</li>
-</ul>
-<h2 id="conclusion">Conclusion</h2>
-<p>The outcome of this configuration:</p>
-<ul>
-<li>I have created my own <code>192.168.2.0/24</code> home network (domain <code>.lan</code>)</li>
-<li>All (relevant) devices automatically get a static IPv4 address and a hostname via DHCP</li>
-<li>each device in my home network can reach any of the other devices in my home network by just using its hostname (or hostname<code>.lan</code>)</li>
-<li>All of this is configured on my OpenWRT router<ul>
-<li>so no specific configuration (E.g. <code>/etc/hosts</code>) is needed on any of the devices in my home network.</li>
+<li>fine grained security<ul>
+<li>you can specify who can have read/write/administrator access to your google site</li>
 </ul>
 </li>
+<li>very easy to create/edit pages</li>
+<li>responsive web design (looks good on any screen)</li>
+<li>several templates</li>
+<li>supports some integration with google products (like google drive, google spreadsheet, google calendar,...)</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">OpenWrt has a ton of features and <a href="https://openwrt.org/packages/start">additional software packages</a> that I didn't use.</p>
-</div>
+<h2 id="cons">Cons</h2>
+<ul>
+<li>requires internet access</li>
+<li>requires a google account</li>
+<li>dependent on google terms and conditions (things might change in the future)</li>
+<li>mainly a simple static website (no dynamic content) with very limited configuration possibilities.</li>
+</ul>
 
 
 
