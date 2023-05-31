@@ -139,11 +139,11 @@ PING nuc1.lan (192.168.2.11): 56 data bytes
 64 bytes from 192.168.2.11: icmp_seq=1 ttl=64 time=3.348 ms
 ```
 
-### Issues
+## Issues
 
 * [#1 Once or twice a day cannot resolve hostname `nuc2.lan` in docker container](https://github.com/janvda/my-cloud-at-the-edge/issues/1) - it is not yet clear if this is caused by this setup or not.
 
-### Conclusion
+## Conclusion
 
 The outcome of this configuration:
 

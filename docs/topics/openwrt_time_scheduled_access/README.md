@@ -135,3 +135,9 @@ These buttons open a custom command URL (see previous section) with appropriate 
 ![google_site - firewall rules](./google_site_firewall_reject_rules.png)
 
 !!! example "Show my google site with custom commands"
+
+## Conclusion
+
+* It has worked very reliably
+* No longer used as kids are too old and are not playing that much on playstation
+* problem can be circumvented via mobile data
