@@ -8,6 +8,10 @@ Before reading this topic, first read topic: [My OpenWRT Access Point](./../open
     * This schedule can also be disabled so that they can access WiFi outside the time schedule when really needed.
 2. Enable/disable access for a specific device (e.g. a playstation)
 
+## Where ?
+
+![network time scheduled access diagram](./network_access.drawio.png)
+
 ## How ?
 
 ### Define 3 IP ranges
@@ -138,6 +142,8 @@ These buttons open a custom command URL (see previous section) with appropriate 
 
 ## Conclusion
 
-* It has worked very reliably
-* No longer used as kids are too old and are not playing that much on playstation
-* problem can be circumvented via mobile data
+⨁ It has worked very reliably
+
+⊖ No longer used as kids are too old and are not playing that much on playstation
+
+⊖ blocked internet access can be circumvented using mobile data
