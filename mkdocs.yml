@@ -33,6 +33,6 @@ nav:
     - OpenWrt Access Point: topics/openwrt_access_point/README.md
     - OpenWrt Time Scheduled Access: topics/openwrt_time_scheduled_access/README.md  
     - Google Sites: topics/google_sites/README.md
-    - Pi Access Point: topics/pi_access_point/README.md
     - Raspberry Pi:   topics/raspberry_pi/README.md
     - Intel NUC:      topics/intel_nuc/README.md
+    - Raspberry Pi Access Point:  topics/raspberry_pi_access_point/README.md
