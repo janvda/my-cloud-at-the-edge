@@ -2,4 +2,6 @@
 
 ## Agenda (Proposal)
 
-TODO
+1. Networking continued
+    1. [Raspberry Pi Access Point](../topics/raspberry_pi_access_point/README.md)
+2. ... (TO BE DEFINED)

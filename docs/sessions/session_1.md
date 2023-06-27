@@ -1,6 +1,6 @@
 # Session 1: Intro & Networking
 
-## Agenda (Proposal)
+## Agenda
 
 1. About me
 2. [What and Why ?](../index.md)
@@ -13,5 +13,3 @@
 5. Devices
     1. [Raspberry Pi](../topics/raspberry_pi/README.md)
     2. [Intel Nuc](../topics/intel_nuc/README.md)
-6. Networking continued
-    1. [Raspberry Pi Access Point](../topics/raspberry_pi_access_point/README.md)
