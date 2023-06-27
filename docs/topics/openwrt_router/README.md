@@ -65,7 +65,10 @@ Besides the GUI it has also a command line interface ([UCI](https://openwrt.org/
 
 ??? example "DEMO Access the router via ssh"
 
-    An example of an uci command : `uci show wireless`
+    2 examples of uci commands : 
+
+    *  `uci help`
+    *  `uci show wireless.radio1`
 
 ### Configure routing / network
 
