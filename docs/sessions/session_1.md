@@ -1,4 +1,4 @@
-# Session 1: Intro & Networking
+# Session 1 (2023-06-27): Intro & Networking
 
 ## Agenda
 

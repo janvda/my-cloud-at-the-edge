@@ -26,7 +26,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Sessions:
-    - Session 1 Intro & Networking: sessions/session_1.md
+    - Session 1 (2023-06-27) Intro & Networking: sessions/session_1.md
     - Session 2 (Under Construction): sessions/session_2.md
   - Topics:
     - OpenWrt Router: topics/openwrt_router/README.md
